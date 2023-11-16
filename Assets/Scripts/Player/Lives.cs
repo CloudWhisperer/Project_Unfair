@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class Lives : MonoBehaviour
 {
-    public static int lives;
+    public static int Player_Lives;
 
     private void Start()
     {
-        Debug.Log(lives);
+        Debug.Log(Player_Lives);
     }
 }

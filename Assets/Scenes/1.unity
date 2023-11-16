@@ -4620,7 +4620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ac10895bca18024a82418caa96b3183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  live_text: {fileID: 1661244015}
+  Lives_UI_Text: {fileID: 0}
 --- !u!1 &1004935936
 GameObject:
   m_ObjectHideFlags: 0

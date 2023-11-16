@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,7 +10,7 @@ public class title_buttons : MonoBehaviour
 
     public void startgame()
     {
-        Lives.lives = 10;
+        Lives.Player_Lives = 10;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

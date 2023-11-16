@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 public class Player_death : MonoBehaviour
 {
     Additional_Functions playerfunctions;
-    private Scene levelscene;
-    private int lives;
 
     private void Start()
     {
@@ -22,11 +20,11 @@ public class Player_death : MonoBehaviour
 
     private IEnumerator Death()
     {
-        Lives.lives -= 1;
+        Lives.Player_Lives -= 1;
         playerfunctions.Player_death();
         yield return new WaitForSeconds(1);
 
-        if (Lives.lives != 0)
+        if (Lives.Player_Lives != 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
@@ -35,6 +33,5 @@ public class Player_death : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
-
     }
 }
